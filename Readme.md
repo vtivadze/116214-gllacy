@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Vakhtang Tivadze](https://htmlacademy.ru/profile/id116214).
-* Наставник: `Неизвестно`.
+* Наставник [Илья Сачев](https://htmlacademy.ru/profile/id11939).
 
 ---
 
