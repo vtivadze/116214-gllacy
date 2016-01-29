@@ -5,10 +5,15 @@
 		<title>Gllacy Shop</title>
 	</head>
 	<body>
-	
+		<!-- 
+			
+			Посмотри все ошибки что я описал в index применительно к header и footer и внеси их тут тоже
+			Посмотри замечания по поводу блока с одним товаром и внеси эти замечания и тут тоже
+			
+		 -->
 		<header class="main-header">
 			<div class="main-header-left">
-				<div class="logo"></div>
+				<div class="logo"></div> <!-- Логотип ссылка на главную -->
 				<nav class="main-navigator">
 					<ul>
 						<li class="active"><a href="#">Каталог</a></li>
@@ -30,7 +35,12 @@
 
 		<main class="catalog-content">
 			
-			<div class="bradcurmbs">
+			<!-- 
+				Ошибка в названии класса
+
+				Правильное написание - breadcrumbs
+			 -->
+			<div class="bradcurmbs"> <!-- Вполне было бы достаточно, если класс был непосредственно на ul -->
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Каталог</a></li>
@@ -50,8 +60,8 @@
 							</select>
 						</div>
 						<div class="catalog-filter-item">
-								<label>Цена: 100 руб. – 500 руб.</label>
-								<div class="price-range"></div>
+							<label>Цена: 100 руб. – 500 руб.</label>
+							<div class="price-range"></div>
 						</div>
 						<div class="catalog-filter-item">
 							<fieldset class="richness">
@@ -207,8 +217,12 @@
 					</article>
 				</div>
 			</section>
-
-			<section class="catalog-paging">
+				
+			<!-- 
+				Да не нужна тут section, можно было просто обойтись ul. Лучше для ul задать класс pagination чем для section. 
+				Совершенно лишний элемент 
+			-->
+			<section class="catalog-paging"> 
 				<ul>
 					<li class="prev"><a href="#">&lt;</a></li>
 					<li class="active"><a href="#">1</a></li>
