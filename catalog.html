@@ -2,23 +2,25 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Глейси</title>
+        <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="catalog">
 
-        <header class="main-header">
-            <div class="main-header-left">
-                <div class="logo">
+        <header class="main-header clear-fix">
+            <div class="column-left clear-fix">
+                <div class="logo column-left">
                     <a href="index.html">
                         <img src="img/logo_gllacy.svg" width="154" height="64" alt="Глейси">
                     </a>
                 </div> 
-                <nav class="main-navigation">
+                <nav class="main-navigation column-left">
                     <ul>
-                        <li><a href="#">Каталог</a>
+                        <li class="menu-catalog"><a href="#">Каталог</a>
                             <ul class="sub-menu">
-                                <li class="sub-menu-header"><a href="#">Новинки</a></li>
+                                <li><a href="#">Новинки</a></li>
                                 <li class="current">Сливочное</li>
                                 <li><a href="#">Щербеты</a></li>
                                 <li><a href="#">Фруктовый лед</a></li>
@@ -31,15 +33,15 @@
                 </nav>
             </div>
 
-            <div class="main-header-right">
+            <div class="column-right">
                 <button class="search-form">
-                    <form class="hidden" action="https://echo.htmlacademy.html" method="post">
+                    <form action="https://echo.htmlacademy.html" method="post">
                         <input type="search" name="search-item" placeholder="Что ищем?">
                     </form>
                 </button>
 
                 <div class="user-account">Вход
-                    <form class="hidden" action="https://echo.htmlacademy.html" method="post">
+                    <form action="https://echo.htmlacademy.html" method="post">
                         <input type="mail" name="user-mail" placeholder="Электронная почта">
                         <input type="password" name="user-password" placeholder="Пароль">
                         <button type="submit">Войти</button>
@@ -51,18 +53,18 @@
                 </div>
 
                 <div class="user-cart">Пусто
-                    <div class="user-cart-items hidden">
+                    <div class="user-cart-items">
                         <table>
                             <tr class="user-cart-item">
                                 <td class="user-cart-item-remouve"></td>
-                                <td class="user-cart-item-image"><img src="http://placehold.it/20x20"></td>
+                                <td class="user-cart-item-image"><img src="img/icecreame_1.png" width="33" height="33"></td>
                                 <td class="user-cart-item-title">Пломбир с апельсиновым джемом</td>
                                 <td class="user-cart-item-couont">1,5 кг х 200 руб.</td>
                                 <td class="user-cart-item-price">300 руб.</td>
                             </tr>
                             <tr class="user-cart-item">
                                 <td class="user-cart-item-remouve"></td>
-                                <td class="user-cart-item-image"><img src="http://placehold.it/20x20"></td>
+                                <td class="user-cart-item-image"><img src="img/icecreame_2.png" width="33" height="33"></td>
                                 <td class="user-cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
                                 <td class="user-cart-item-couont">1,5 кг х 300 руб</td>
                                 <td class="user-cart-item-price">450 руб.</td>
@@ -82,12 +84,12 @@
             </div>
         </header>
 
-        <main class="catalog-content">
+        <main class="catalog-content clear-fix">
 
             <ul class="breadcrumbs">
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Каталог</a></li>
-                <li><a href="#">Сливочное</a></li>
+                <li class="active">Сливочное</li>
             </ul>
 
             <h1 class="catalog-header">Сливочное мороженое</h1>
@@ -131,7 +133,7 @@
                         </div>
                     </div>
                     <div class="catalog-filter-row">
-                        <div class="catalog-item">
+                        <div class="catalog-filter-item">
                             <fieldset class="fillers">
                                 <legend>Наполнители:</legend>
                                 <div class="fieldset-item">
@@ -162,9 +164,9 @@
             </section>
 
             <section class="goods">
-                <div class="goods-row">
+                <div class="goods-row clear-fix">
                     <article class="goods-item">
-                        <img src="img/goods_item_1.svg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <img src="img/goods_item_1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">310</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -174,7 +176,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                     <article class="goods-item">
-                        <img src="img/goods_item_2.svg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                        <img src="img/goods_item_2.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">380</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -184,7 +186,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                     <article class="goods-item">
-                        <img src="img/goods_item_3.svg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                        <img src="img/goods_item_3.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">355</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -194,7 +196,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                     <article class="goods-item">
-                        <img src="img/goods_item_4.svg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                        <img src="img/goods_item_4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">415</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -204,9 +206,9 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                 </div>
-                <div class="goods-row">
+                <div class="goods-row clear-fix">
                     <article class="goods-item">
-                        <img src="img/goods_item_5.svg" width="267" height="267" alt="Сливочное с брусничным джемом">
+                        <img src="img/goods_item_5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">325</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -216,7 +218,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                     <article class="goods-item">
-                        <img src="img/goods_item_6.svg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+                        <img src="img/goods_item_6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">410</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -226,7 +228,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                     <article class="goods-item">
-                        <img src="img/goods_item_7.svg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+                        <img src="img/goods_item_7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">375</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -236,7 +238,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                     <article class="goods-item">
-                        <img src="img/goods_item_8.svg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+                        <img src="img/goods_item_8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">320</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -246,9 +248,9 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                 </div>
-                <div class="goods-row">
+                <div class="goods-row clear-fix">
                     <article class="goods-item">
-                        <img src="img/goods_item_9.svg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+                        <img src="img/goods_item_9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">340</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -258,7 +260,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                     <article class="goods-item">
-                        <img src="img/goods_item_10.svg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+                        <img src="img/goods_item_10.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">335</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -268,7 +270,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>                    
                     <article class="goods-item">
-                        <img src="img/goods_item_11.svg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+                        <img src="img/goods_item_11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">355</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -278,7 +280,7 @@
                         <button class="btn hidden">Быстрый просмотр</button>
                     </article>
                     <article class="goods-item">
-                        <img src="img/goods_item_12.svg" width="267" height="267" alt="Сливочное с мятным сиропом">
+                        <img src="img/goods_item_12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
                         <div class="goods-item-price">
                             <span class="goods-item-price-value">420</span>
                             <span class="goods-item-price-valute rouble"></span>
@@ -304,7 +306,7 @@
 
         <footer class="main-footer">
 
-            <ul class="footer-social">
+            <ul class="footer-social column-left">
                 <li><a class="social-btn social-btn-twit" href="#">Твиттер</a></li>
                 <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
                 <li><a class="social-btn social-btn-vb" href="#">Фейсбук</a></li>
@@ -322,7 +324,7 @@
                 </li>
             </ul>
 
-            <div class="footer-logo">
+            <div class="footer-logo column-right">
                 <a href="https://htmlacademy.ru">
                     <img src="img/log_htmlacademy.svg" width="108" height="38" alt="HTML Academy">
                 </a>
@@ -330,6 +332,6 @@
             </div>
                 
         </footer>
-
+        <script src="js/script.js"></script>
     </body>
 </html>
