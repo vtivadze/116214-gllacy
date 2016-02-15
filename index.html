@@ -2,21 +2,23 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Глейси</title>
+        <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="index">
 
-        <header class="main-header">
-            <div class="main-header-left">
-                <div class="logo">
+        <header class="main-header clear-fix">
+            <div class="column-left clear-fix">
+                <div class="logo column-left">
                     <img src="img/logo_gllacy.svg" width="154" height="64" alt="Глейси">
                 </div> 
-                <nav class="main-navigation">
+                <nav class="main-navigation column-left">
                     <ul>
-                        <li><a href="#">Каталог</a>
+                        <li class="menu-catalog"><a href="#">Каталог</a>
                             <ul class="sub-menu">
-                                <li class="sub-menu-header"><a href="#">Новинки</a></li>
+                                <li><a href="#">Новинки</a></li>
                                 <li><a href="catalog.html">Сливочное</a></li>
                                 <li class="active"><a href="#">Щербеты</a></li>
                                 <li><a href="#">Фруктовый лед</a></li>
@@ -29,15 +31,15 @@
                 </nav>
             </div>
 
-            <div class="main-header-right">
+            <div class="column-right">
                 <button class="search-form">
-                    <form class="hidden" action="https://echo.htmlacademy.html" method="post">
+                    <form action="https://echo.htmlacademy.html" method="post">
                         <input type="search" name="search-item" placeholder="Что ищем?">
                     </form>
                 </button>
 
                 <div class="user-account">Вход
-                    <form class="hidden" action="https://echo.htmlacademy.html" method="post">
+                    <form action="https://echo.htmlacademy.html" method="post">
                         <input type="mail" name="user-mail" placeholder="Электронная почта">
                         <input type="password" name="user-password" placeholder="Пароль">
                         <button type="submit">Войти</button>
@@ -49,18 +51,18 @@
                 </div>
 
                 <div class="user-cart">Пусто
-                    <div class="user-cart-items hidden">
+                    <div class="user-cart-items clear-fix">
                         <table>
                             <tr class="user-cart-item">
                                 <td class="user-cart-item-remouve"></td>
-                                <td class="user-cart-item-image"><img src="http://placehold.it/20x20"></td>
+                                <td class="user-cart-item-image"><img src="img/icecreame_1.png" width="33" height="33"></td>
                                 <td class="user-cart-item-title">Пломбир с апельсиновым джемом</td>
                                 <td class="user-cart-item-couont">1,5 кг х 200 руб.</td>
                                 <td class="user-cart-item-price">300 руб.</td>
                             </tr>
                             <tr class="user-cart-item">
                                 <td class="user-cart-item-remouve"></td>
-                                <td class="user-cart-item-image"><img src="http://placehold.it/20x20"></td>
+                                <td class="user-cart-item-image"><img src="img/icecreame_2.png" width="33" height="33"></td>
                                 <td class="user-cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
                                 <td class="user-cart-item-couont">1,5 кг х 300 руб</td>
                                 <td class="user-cart-item-price">450 руб.</td>
@@ -74,7 +76,7 @@
                 </div>
 
                 <div class="header-contacts">
-                    <div class="date-range">С 10 до 20, ежедневно</div>
+                    <div class="date-range">С 10 до 20 ежедневно</div>
                     <div class="phone">8 812 450-25-25</div>
                 </div>
             </div>
@@ -103,22 +105,22 @@
                 <a href="#" class="btn slider-toggle-button">Давайте оба!</a>
             </div>
 
-            <div class="promo-row">
+            <div class="promo-row clear-fix">
                 <article class="promo-item column-left">
                     <h2 class="promo-title">Малинка даром!</h2>
                     <p class="promo-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                    <a class="btn promo-button href="#"">Хочу варенье!</a>
+                    <a class="btn promo-button" href="#">Хочу варенье!</a>
                 </article>
                 <article class="promo-item column-right">
                     <h2 class="promo-title">Шоколадки даром!</h2>
                     <p class="promo-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                    <a href="" class="btn promo-button">Хочу шоколадки!</a>
+                    <a href="#" class="btn promo-button">Хочу шоколадки!</a>
                 </article>
             </div>
 
-            <div class="goods-row">
+            <div class="goods-row clear-fix">
                 <article class="goods-item">
-                    <img src="img/goods_item_1.svg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img src="img/goods_item_1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     <div class="goods-item-price">
                         <span class="goods-item-price-value">310</span>
                         <span class="goods-item-price-valute rouble"></span>
@@ -128,7 +130,7 @@
                 </article>
 
                 <article class="goods-item">
-                    <img src="img/goods_item_2.svg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                    <img src="img/goods_item_2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                     <div class="goods-item-price">
                         <span class="goods-item-price-value">380</span>
                         <span class="goods-item-price-valute rouble"></span>
@@ -138,7 +140,7 @@
                 </article>
 
                 <article class="goods-item">
-                    <img src="img/goods_item_3.svg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                    <img src="img/goods_item_3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                     <div class="goods-item-price">
                         <span class="goods-item-price-value">355</span>
                         <span class="goods-item-price-valute rouble"></span>
@@ -148,7 +150,7 @@
                 </article>
 
                 <article class="goods-item">
-                    <img src="img/goods_item_4.svg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                    <img src="img/goods_item_4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                     <div class="goods-item-price">
                         <span class="goods-item-price-value">415</span>
                         <span class="goods-item-price-valute rouble"></span>
@@ -160,22 +162,22 @@
 
             <div class="shop-advantage">
                 <p class="shop-advantage-main">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p> 
-                <ul>
-                    <li>
+                <ul class="clear-fix">
+                    <li class="column-left">
                         <p class="shop-advantage-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                         <p class="shop-advantage-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                     </li>
-                    <li>
+                    <li class="column-right">
                         <p class="shop-advantage-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                         <p class="shop-advantage-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
                     </li>
                 </ul>
             </div>
 
-            <div class="promo-row">
+            <div class="promo-row clear-fix">
                 <div class="promo-item promo-item-news column-left">
                     <div>Новое в нашем блоге</div>
-                    <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                    <a href="#">10  способов сервировки<br>фруктовых щербетов<br>к столу</a>
                 </div>
                 <div class="promo-item promo-item-delivery column-right">
                     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
@@ -191,33 +193,23 @@
                 <div class="map-contacts">
                     <p class="map-contacts-address">
                         Адрес главного офиса и<br>
-                        офлайн магазина:<br>
+                        офлайн магазина:
                         <span>ул. Большая Конюшенная<br>
                         19/8, Санкт-Петербург</span>
                     </p>
                     <p class="map-contacts-phone">
-                        Для заказов по телефону:<br>
-                        <span>8 812 450-25-25</span><br>
+                        Для заказов по телефону:
+                        <span>8 812 450-25-25</span>
                         (с 10 до 20 ежедневно)
                     </p>
                     <button class="btn feedback">Форма обратной связи</button>
-                    <div class="hidden modal-window" id="feedback-form">
-                        <div class="close"></div>
-                        <p>Мы обязательно вам ответим!</p>
-                        <form action="https://echo.htmlacademy.html" method="post">
-                            <input type="text" name="user-name" placeholder="Как вас зовут?">
-                            <input type="mail" name="user-mail" placeholder="Ваша почта для ответа?">
-                            <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
-                            <button type="submit">Отправить</button>
-                        </form>
-                    </div>
                 </div>
             </div>
         </main>
         
-        <footer class="main-footer">
+        <footer class="main-footer clear-fix">
 
-            <ul class="footer-social">
+            <ul class="footer-social column-left">
                 <li><a class="social-btn social-btn-twit" href="#">Твиттер</a></li>
                 <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
                 <li><a class="social-btn social-btn-vb" href="#">Фейсбук</a></li>
@@ -235,7 +227,7 @@
                 </li>
             </ul>
 
-            <div class="footer-logo">
+            <div class="footer-logo column-right">
                 <a href="https://htmlacademy.ru">
                     <img src="img/log_htmlacademy.svg" width="108" height="38" alt="HTML Academy">
                 </a>
@@ -244,5 +236,19 @@
 
         </footer>
 
+        <div class="modal-window" id="feedback-form">
+            <div class="modal-content">
+                <div class="close"></div>
+                <p>Мы обязательно вам ответим!</p>
+                <form action="https://echo.htmlacademy.html" method="post" class="clear-fix">
+                    <input type="text" name="user-name" placeholder="Как вас зовут?">
+                    <input type="mail" name="user-mail" placeholder="Ваша почта для ответа?">
+                    <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
