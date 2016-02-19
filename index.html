@@ -15,8 +15,9 @@
                     <img src="img/logo_gllacy.svg" width="154" height="64" alt="Глейси">
                 </div> 
                 <nav class="main-navigation column-left">
-                    <ul>
-                        <li class="menu-catalog"><a href="#">Каталог</a>
+                    <ul class="main-menu">
+                        <li class="main-menu-item menu-catalog">
+                            <a href="#">Каталог</a>
                             <ul class="sub-menu">
                                 <li><a href="#">Новинки</a></li>
                                 <li><a href="catalog.html">Сливочное</a></li>
@@ -25,54 +26,58 @@
                                 <li><a href="#">Мелорин</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">О Компании</a></li>
+                        <li class="main-menu-item active">Доставка и оплата</li>
+                        <li class="main-menu-item"><a href="#">О Компании</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="column-right">
-                <button class="search-form">
-                    <form action="https://echo.htmlacademy.html" method="post">
-                        <input type="search" name="search-item" placeholder="Что ищем?">
-                    </form>
-                </button>
-
-                <div class="user-account">Вход
-                    <form action="https://echo.htmlacademy.html" method="post">
-                        <input type="mail" name="user-mail" placeholder="Электронная почта">
-                        <input type="password" name="user-password" placeholder="Пароль">
-                        <button type="submit">Войти</button>
-                        <div>
-                            <a href="#">Забыли пароль?</a>
-                            <a href="#">Новая регистрация</a>
-                        </div>
-                    </form>
+                <div class="search-form-container">
+                    <button class="search-form">
+                        <form action="https://echo.htmlacademy.html" method="post">
+                            <input type="search" name="search-item" placeholder="Что ищем?">
+                        </form>
+                    </button>
                 </div>
 
-                <div class="user-cart">Пусто
-                    <div class="user-cart-items clear-fix">
-                        <table>
-                            <tr class="user-cart-item">
-                                <td class="user-cart-item-remouve"></td>
-                                <td class="user-cart-item-image"><img src="img/icecreame_1.png" width="33" height="33"></td>
-                                <td class="user-cart-item-title">Пломбир с апельсиновым джемом</td>
-                                <td class="user-cart-item-couont">1,5 кг х 200 руб.</td>
-                                <td class="user-cart-item-price">300 руб.</td>
-                            </tr>
-                            <tr class="user-cart-item">
-                                <td class="user-cart-item-remouve"></td>
-                                <td class="user-cart-item-image"><img src="img/icecreame_2.png" width="33" height="33"></td>
-                                <td class="user-cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
-                                <td class="user-cart-item-couont">1,5 кг х 300 руб</td>
-                                <td class="user-cart-item-price">450 руб.</td>
-                            </tr>
-                        </table>
-                        <div class="user-cart-items-summary">
-                            Итого: <span class="price">750</span> руб.
+                <div class="user-account-container">
+                    <button class="user-account">Вход
+                        <form action="https://echo.htmlacademy.html" method="post">
+                            <input type="mail" name="user-mail" placeholder="Электронная почта">
+                            <input type="password" name="user-password" placeholder="Пароль">
+                            <input type="submit" value="Войти">
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                        </form>
+                    </button>
+                </div>
+
+                <div class="user-cart-container">
+                    <button class="user-cart">Пусто
+                        <div class="user-cart-items clear-fix">
+                            <table>
+                                <tr class="user-cart-item">
+                                    <td class="user-cart-item-remouve"></td>
+                                    <td class="user-cart-item-image image1"></td>
+                                    <td class="user-cart-item-title">Пломбир с апельсиновым джемом</td>
+                                    <td class="user-cart-item-count">1,5 кг <span class="price">х 200 руб.</span></td>
+                                    <td class="user-cart-item-price">300 руб.</td>
+                                </tr>
+                                <tr class="user-cart-item">
+                                    <td class="user-cart-item-remouve"></td>
+                                    <td class="user-cart-item-image image2"></td>
+                                    <td class="user-cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                    <td class="user-cart-item-count">1,5 кг <span class="price">х 300 руб.</span></td>
+                                    <td class="user-cart-item-price">450 руб.</td>
+                                </tr>
+                            </table>
+                            <div class="user-cart-items-summary">
+                                Итого: <span class="price">750</span> руб.
+                            </div>
+                            <a class="btn" href="#">Оформить заказ</a>
                         </div>
-                        <a class="btn" href="#">Оформить заказ</a>
-                    </div>
+                    </button>
                 </div>
 
                 <div class="header-contacts">
@@ -102,16 +107,16 @@
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                 </ul>
-                <a href="#" class="btn slider-toggle-button">Давайте оба!</a>
+                <a href="#" class="btn slider-button">Давайте оба!</a>
             </div>
 
             <div class="promo-row clear-fix">
-                <article class="promo-item column-left">
+                <article class="column-left promo-item promo-1">
                     <h2 class="promo-title">Малинка даром!</h2>
                     <p class="promo-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                     <a class="btn promo-button" href="#">Хочу варенье!</a>
                 </article>
-                <article class="promo-item column-right">
+                <article class="column-right promo-item promo-2">
                     <h2 class="promo-title">Шоколадки даром!</h2>
                     <p class="promo-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                     <a href="#" class="btn promo-button">Хочу шоколадки!</a>
@@ -120,6 +125,7 @@
 
             <div class="goods-row clear-fix">
                 <article class="goods-item">
+                    <div class="goods-item-hit"></div>
                     <img src="img/goods_item_1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     <div class="goods-item-price">
                         <span class="goods-item-price-value">310</span>
@@ -130,6 +136,7 @@
                 </article>
 
                 <article class="goods-item">
+                    <div class="goods-item-hit"></div>
                     <img src="img/goods_item_2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                     <div class="goods-item-price">
                         <span class="goods-item-price-value">380</span>
@@ -140,6 +147,7 @@
                 </article>
 
                 <article class="goods-item">
+                    <div class="goods-item-hit"></div>
                     <img src="img/goods_item_3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                     <div class="goods-item-price">
                         <span class="goods-item-price-value">355</span>
@@ -150,6 +158,7 @@
                 </article>
 
                 <article class="goods-item">
+                    <div class="goods-item-hit"></div>
                     <img src="img/goods_item_4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                     <div class="goods-item-price">
                         <span class="goods-item-price-value">415</span>
@@ -164,22 +173,22 @@
                 <p class="shop-advantage-main">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p> 
                 <ul class="clear-fix">
                     <li class="column-left">
-                        <p class="shop-advantage-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                        <p class="shop-advantage-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                        <p class="shop-advantage-item icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                        <p class="shop-advantage-item leaf">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                     </li>
                     <li class="column-right">
-                        <p class="shop-advantage-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                        <p class="shop-advantage-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+                        <p class="shop-advantage-item cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                        <p class="shop-advantage-item thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
                     </li>
                 </ul>
             </div>
 
             <div class="promo-row clear-fix">
-                <div class="promo-item promo-item-news column-left">
+                <div class="column-left promo-item promo-item-news">
                     <div>Новое в нашем блоге</div>
                     <a href="#">10  способов сервировки<br>фруктовых щербетов<br>к столу</a>
                 </div>
-                <div class="promo-item promo-item-delivery column-right">
+                <div class="column-right promo-item promo-item-delivery">
                     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <input type="mail" name="user-mail" placeholder="Электронная почта">
