@@ -37,6 +37,7 @@
                     <button class="search-form">
                         <form action="https://echo.htmlacademy.html" method="post">
                             <input type="search" name="search-item" placeholder="Что ищем?">
+                            <div class="dictation">Что ищем?</div>
                         </form>
                     </button>
                 </div>
@@ -45,8 +46,10 @@
                     <button class="user-account">Вход
                         <form action="https://echo.htmlacademy.html" method="post">
                             <input type="mail" name="user-mail" placeholder="Электронная почта">
+                            <div class="dictation mail">Электронная почта</div>
                             <input type="password" name="user-password" placeholder="Пароль">
-                            <input type="submit" value="Войти">
+                            <div class="dictation password">Пароль</div>
+                            <input class="btn" type="submit" value="Войти">
                             <a href="#">Забыли пароль?</a>
                             <a href="#">Новая регистрация</a>
                         </form>
@@ -54,7 +57,7 @@
                 </div>
 
                 <div class="user-cart-container">
-                    <button class="user-cart">Пусто
+                    <button class="user-cart">2 товара
                         <div class="user-cart-items clear-fix">
                             <table>
                                 <tr class="user-cart-item">
@@ -133,6 +136,7 @@
                         <span class="goods-item-unity">/кг</span>
                     </div>
                     <a class="goods-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
                 </article>
 
                 <article class="goods-item">
@@ -144,6 +148,7 @@
                         <span class="goods-item-unity">/кг</span>
                     </div>
                     <a class="goods-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
                 </article>
 
                 <article class="goods-item">
@@ -155,6 +160,7 @@
                         <span class="goods-item-unity">/кг</span>
                     </div>
                     <a class="goods-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
                 </article>
 
                 <article class="goods-item">
@@ -166,6 +172,7 @@
                         <span class="goods-item-unity">/кг</span>
                     </div>
                     <a class="goods-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
                 </article>
             </div>
 
@@ -192,13 +199,16 @@
                     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <input type="mail" name="user-mail" placeholder="Электронная почта">
-                        <button type="submit">Отправить</button>
+                        <div class="dictation email">Электронная почта</div>
+                        <button class="btn" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
 
             <div class="map">
-                <div class="map-container"></div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412363!2d30.32089461564032!3d59.938796869048495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2zQm9sc2hheWEgS29ueXVzaGVubmF5YSB1bC4sIDE5LCBTYW5rdC1QZXRlcmJ1cmcsIOGDoOGDo-GDoeGDlOGDl-GDmCwgMTkxMTg2!5e0!3m2!1ska!2sge!4v1455931207963" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
                 <div class="map-contacts">
                     <p class="map-contacts-address">
                         Адрес главного офиса и<br>
@@ -219,10 +229,10 @@
         <footer class="main-footer clear-fix">
 
             <ul class="footer-social column-left">
-                <li><a class="social-btn social-btn-twit" href="#">Твиттер</a></li>
-                <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-                <li><a class="social-btn social-btn-vb" href="#">Фейсбук</a></li>
-                <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+                <li class="social-btn social-btn-twit"><a href="#">Твиттер</a></li>
+                <li class="social-btn social-btn-inst"><a href="#">Инстаграм</a></li>
+                <li class="social-btn social-btn-fb"><a href="#">Фейсбук</a></li>
+                <li class="social-btn social-btn-vk"><a href="#">Вконтакте</a></li>
             </ul>
 
             <ul class="footer-info">
@@ -251,8 +261,11 @@
                 <p>Мы обязательно вам ответим!</p>
                 <form action="https://echo.htmlacademy.html" method="post" class="clear-fix">
                     <input type="text" name="user-name" placeholder="Как вас зовут?">
+                    <div class="dictation user-name">Как вас зовут?</div>
                     <input type="mail" name="user-mail" placeholder="Ваша почта для ответа?">
+                    <div class="dictation user-mail">Ваша почта для ответа?</div>
                     <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
+                    <div class="dictation user-message">Напишите что-нибудь...</div>
                     <button type="submit">Отправить</button>
                 </form>
             </div>
