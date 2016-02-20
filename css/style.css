@@ -90,7 +90,6 @@ body {
                     line-height: 0;
                     position: relative;
                     margin-right: 5px;
-
                 }
 
                 .main-menu-item>a:after {
@@ -104,7 +103,7 @@ body {
                     content: '';
                     display: block;
                     height: 1px;
-                    box-shadow: 0 0 0 0 #fff;
+                    box-shadow: none;
                 }
 
                 .main-menu-item:hover>a {
@@ -129,19 +128,38 @@ body {
                 }
 
                 .main-menu .main-menu-item.active {
+                    padding-top: 19px;
+                    padding-bottom: 19px;
+                }
+
+                .main-menu .main-menu-item.active>a {
                     background-color: #d07058;
                     border-radius: 16px;
                     border-bottom: none;
                     color: #000;
-                    margin-top: 19px;
-                    margin-bottom: 19px;
+                    
                     font-size: 16px;
                     line-height: 26px;
                     font-weight: bold;
                     color: #fff;
                     text-decoration: none;
-                    padding: 3px 15px;
-                    cursor: default;
+                    cursor: pointer;
+                }
+
+                    .main-menu-item.active>a:after {
+                        box-shadow: none;
+                    }
+
+                .main-menu-item:first-child {
+                    z-index: 3
+                }
+
+                .main-menu-item:nth-child(2) {
+                    z-index: 2;
+                }
+
+                .main-menu-item:nth-child(3) {
+                    z-index: 1;
                 }
 
                     .menu-catalog .sub-menu {
@@ -157,7 +175,7 @@ body {
                         background-color: #f8f7f4;
                         border-radius: 5px;
 
-                        box-shadow: 0 7px 27px 7px rgba(0, 0, 0, 0.3);
+                        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
                     }
 
                     .menu-catalog:hover .sub-menu {
@@ -239,7 +257,7 @@ body {
             .main-header .user-cart {
                 border: none;
                 outline: none;
-                background-color: #a1b5aa;
+                background-color: rgba(255, 255, 255, 0.2);
             }
 
             .main-header .search-form {
@@ -800,7 +818,7 @@ body {
         }
 
         .goods-row .goods-item:hover {
-            background-color: #a7b8ad;
+            background-color: rgba(255, 255, 255, 0.3);
             padding: 10px 0 0 0;
             text-align: center;
             border-radius: 4px;
@@ -1293,6 +1311,7 @@ body {
                     height: 22px;
                     float: right;
                     position: relative;
+                    cursor: pointer;
                 }
 
                 .modal-content .dictation.user-name,
@@ -1478,22 +1497,46 @@ body {
     }
 
         .catalog-content .breadcrumbs {
+            display: inline-block;
             list-style-type: none;
             margin: 0;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             padding: 0;
         }
 
-            .breadcrumbs li {
+            .breadcrumbs-item {
                 display: inline-block;
                 vertical-align: top;
                 font-size: 14px;
                 line-height: 20px;
-                margin-right: 20px;
+                padding-right: 22px;
+                color: #fff;
+                position: relative;
             }
 
+            .breadcrumbs-item:last-child {
+                padding-right: 0;
+            }
+
+                .breadcrumbs-item a {
+                    color: #fff;
+                    text-decoration: none;
+                    display: block;
+                    border-bottom: 1px solid #fff;
+                }
+
+                    .breadcrumbs-item:not(:active) a:after {
+                        content: "»";
+                        display: block;
+                        position: absolute;
+                        right: 5px;
+                        top: 0;
+                    }
+
+                
+
         .catalog-content .catalog-header {
-            color: #000;
+            color: #fff;
             margin: 0;
             margin-bottom: 20px;
             font-size: 35px;
@@ -1537,6 +1580,7 @@ body {
                         line-height: 20px;
                         padding-left: 15px;
                         margin-bottom: 5px;
+                        color: #fff;
                     }
 
                     .catalog-filter-item legend {
@@ -1544,16 +1588,28 @@ body {
                         line-height: 20px;
                         padding-left: 15px;
                         margin-bottom: 5px;
+                        color: #fff;
                     }
 
                     .catalog-filter-item select {
+                        font-size: 16px;
+                        line-height: 26px;
+
                         padding-left: 15px;
-                        height: 35px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+
+                        background-color: #CCE4F7;
+                        border-radius: 18px;
+                        color: #fff;
+
+                        outline: none;
+                        border: none;
                     }
 
                     .catalog-filter-item option {
                         font-size: 16px;
-                        line-height: 22px;
+                        line-height: 26px;
                     }
 
                     .richness .fieldset-item {
@@ -1561,7 +1617,8 @@ body {
                         display: inline-block;
                         vertical-align: top;
                         padding-left: 18px;
-                        height: 35px;
+                        padding-top: 4px;
+                        padding-bottom: 3px;
                     }
 
                     .richness .fieldset-item:first-of-type {
@@ -1572,11 +1629,53 @@ body {
                             vertical-align: middle;
                         }
 
-                    .catalog-filter-item .price-range {
+                        .richness .fieldset-item label {
+                            margin: 0;
+                            vertical-align: middle;
+                        }
+
+                    .catalog-filter-item .price-range-controls {
                         outline: 2px solid yellow;
-                        width: 220px;
-                        height: 35px;
+                        width: 188px;
+                        position: relative;
+                        padding: 12px 16px;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        border-radius: 18px;
                     }
+
+                        .price-range-controls .scale {
+                            height: 4px;
+                            background-color: rgba(255, 255, 255, 0.5);
+
+                        }
+
+                            .price-range-controls .bar {
+                                width: 40%;
+                                height: 4px;
+                                margin-left: 10%;
+                                background-color: #fff;
+                            }
+
+                        .price-range-controls .range-toggle {
+                            position: absolute;
+                            top: 50%;
+                            atransform: translateY(50%);
+                            width: 20px;
+                            height: 20px;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            cursor: pointer;
+                        }
+
+                        .range-toggle.range-toggle-min {
+                            left: 16%;
+                            transform: translate(-50%, -50%);
+                        }
+
+                        .range-toggle.range-toggle-max {
+                            right: 50%;
+                            transform: translate(50%, -50%);
+                        }
 
                     .catalog-filter-item fieldset {
                         border: none;
