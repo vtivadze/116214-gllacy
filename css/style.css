@@ -1545,12 +1545,11 @@ body {
         }
 
         .catalog-content .catalog-filter {
-            outline: 2px solid red;
             margin-bottom: 40px;
         }
 
             .catalog-filter .catalog-filter-row {
-                outline: 2px solid blue;
+
             }
 
             .catalog-filter .catalog-filter-row:first-child {
@@ -1558,7 +1557,6 @@ body {
             }
 
                 .catalog-filter-row .catalog-filter-item {
-                    outline: 2px solid green;
                     display: inline-block;
                     vertical-align: top;
                     margin-right: 15px;
@@ -1586,7 +1584,6 @@ body {
                     .catalog-filter-item legend {
                         font-size: 14px;
                         line-height: 20px;
-                        padding-left: 15px;
                         margin-bottom: 5px;
                         color: #fff;
                     }
@@ -1599,7 +1596,7 @@ body {
                         padding-top: 5px;
                         padding-bottom: 5px;
 
-                        background-color: #CCE4F7;
+                        background-color: #9DB1A6;
                         border-radius: 18px;
                         color: #fff;
 
@@ -1611,18 +1608,22 @@ body {
                         font-size: 16px;
                         line-height: 26px;
                     }
-
-                    .richness .fieldset-item {
-                        outline: 2px solid yellow;
-                        display: inline-block;
-                        vertical-align: top;
-                        padding-left: 18px;
-                        padding-top: 4px;
-                        padding-bottom: 3px;
+                        
+                    .richness {
+                        position: relative;
+                        margin-top: 24px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        border-radius: 18px;
+                        font-size: 0;
                     }
 
-                    .richness .fieldset-item:first-of-type {
-                        padding-left: 15px;
+                    .richness .fieldset-item {
+                        display: inline-block;
+                        vertical-align: top;
+                        position: relative;
+                        clear: both;
                     }
 
                         .fieldset-item input {
@@ -1631,11 +1632,15 @@ body {
 
                         .richness .fieldset-item label {
                             margin: 0;
-                            vertical-align: middle;
+                            display: inline-block;
+                            padding: 7px 20px 7px 30px;
+                        }
+
+                        .richness .fieldset-item:last-of-type label {
+                            padding-right: 0;
                         }
 
                     .catalog-filter-item .price-range-controls {
-                        outline: 2px solid yellow;
                         width: 188px;
                         position: relative;
                         padding: 12px 16px;
@@ -1659,12 +1664,12 @@ body {
                         .price-range-controls .range-toggle {
                             position: absolute;
                             top: 50%;
-                            atransform: translateY(50%);
                             width: 20px;
                             height: 20px;
                             background-color: #fff;
                             border-radius: 50%;
                             cursor: pointer;
+                            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
                         }
 
                         .range-toggle.range-toggle-min {
@@ -1682,7 +1687,6 @@ body {
                     }
 
                     .catalog-filter-item .fillers {
-                        outline: 2px solid yellow;
                         display: inline-block;
                         vertical-align: top;
                         margin-right: 10px;
@@ -1691,16 +1695,136 @@ body {
                         .fillers .fieldset-item {
                             display: inline-block;
                             vertical-align: top;
-                            padding-left: 20px;
                         }
 
-                        .fillers .fieldset-item:first-of-type {
-                            padding-left: 15px;
-                        }
+                    .richness legend {
+                        position: absolute;
+                        top: -24px;
+                    }
+
+                    .richness input[type="radio"]  {
+                        position: absolute;
+                        visibility: hidden;
+                    }
+
+                    .richness .radio-inner {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 3.5px;
+                        left: 3.5px;
+                    }
+
+                    .richness .radio-outer {
+                        width: 18px;
+                        height: 18px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        z-index: -1;
+                        transform: translateY(-50%);
+                        box-sizing: border-box;
+                    }
+
+                    .richness input:checked ~ .radio-outer .radio-inner {
+                        background-color: #fff;
+                        top: 3px;
+                        left: 3px;
+                    }
+
+                    .richness label:hover ~ .radio-outer {
+                        border-width: 2px;
+                    }
+
+                    .richness label:hover ~ .radio-outer .radio-inner {
+                        top: 2px;
+                        left: 2px;
+                    }
 
                     .catalog-filter-item button {
                         vertical-align: bottom;
-                        width: 146px;
+                        font-size: 16px;
+                        line-height: 26px;
+                        padding: 5px 27px;
+                        border: 2px solid #fff;
+                        outline: none;
+                        border-radius: 18px;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        color: #fff;
+                    }
+
+                    .catalog-filter-item button:hover {
+                        background-color: #fff;
+                        color: #363636;
+                    }
+
+                    .catalog-filter-item button:active {
+                        box-shadow: 0 -2px 1px 0 #696969;
+                    }
+
+                    .fillers {
+                        position: relative;
+                        margin-top: 24px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        border-radius: 18px;
+                    }
+
+                    .fillers .fieldset-item {
+                        position: relative;
+                    }
+
+                    .fillers legend {
+                        position: absolute;
+                        top: -25px;
+                    }
+
+                    .fillers input {
+                        position: absolute;
+                        visibility: hidden;
+                    }
+
+                    .fillers label {
+                        margin: 0;
+                        padding: 0;
+                        padding: 7px 20px 7px 30px;
+                    }
+
+                    .fillers .fieldset-item:last-of-type label {
+                        padding-right: 0;
+                    }
+
+                    .fillers .check-outer {
+                        width: 18px;
+                        height: 18px;
+                        border: 1px solid #fff;
+                        border-radius: 3px;
+                        position: absolute;
+                        top: 50%;
+                        z-index: -1;
+                        transform: translateY(-50%);
+                    }
+
+                    .fillers .check-inner {
+                        width: 9px;
+                        height: 6.5px;
+                        border-bottom: 2px solid transparent;
+                        border-left: 2px solid transparent;
+                        margin-top: 3px;
+                        margin-left: 3px;
+                        transform: rotate(-45deg);
+                    }
+
+                    .fillers input:checked ~ .check-outer .check-inner {
+                        border-color: #fff;
+                    }
+
+                    .fillers label:hover ~ .check-outer {
+                        border-width: 2px;
+                        margin-left: -1px;
                     }
 
     .catalog-content .goods {
@@ -1708,7 +1832,6 @@ body {
     }
 
     .catalog-content .pagination {
-        outline: 2px solid red;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -1717,13 +1840,54 @@ body {
     }
 
         .pagination li {
-            outline: 2px solid blue;
             display: inline-block;
             vertical-align: top;
             font-size: 16px;
-            line-height: 22px;
+            line-height: 26px;
             margin-left: 15px;
+            width: 26px;
+            height: 26px;
+            text-align: center;
+            border-radius: 50%;
         }
+
+        .pagination li:first-child {
+            margin-left: 0;
+            font-size: 16px;
+            line-height: 26px;
+
+        }
+
+            .pagination a {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+
+            .pagination li.disabled {
+                color: rgba(255, 255, 255, 0.2);
+            }
+
+            .pagination li.active {
+                background-color: #fff;
+            }
+
+            .pagination li.active a {
+                color: #000;
+            }
+
+            .pagination li:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .pagination li:active {
+                background-color: #fff;
+            }
+
+            .pagination li:active a {
+                color: #000;
+            }
 
     .catalog .main-footer {
         margin-top: 40px;
