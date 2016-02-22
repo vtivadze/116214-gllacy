@@ -1443,7 +1443,7 @@ body {
                 background-image: url("../img/icon_tw.png");
             }
 
-            .social-btn-inst {
+            .social-btn-inst a {
                 background-image: url("../img/icon_inst.png");
             }
 
@@ -1457,6 +1457,10 @@ body {
 
             .social-btn-twit:hover {
                 background-image: url("../img/icon_tw_hvr.png");
+            }
+
+            .social-btn-inst:hover{
+                background: #fff;
             }
 
     .main-footer .footer-info {
