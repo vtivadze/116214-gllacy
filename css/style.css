@@ -1,3 +1,13 @@
+.sprite { background: url('sprite.png') no-repeat top left; width: 9px; height: 5px;  } 
+
+.sprite.arrow_left { background-position: 0 0; height: 14px; } 
+.sprite.arrow_right { background-position: 0 -24px; height: 14px; } 
+.sprite.hit { background-position: 0 -48px; width: 61px; height: 61px; } 
+.sprite.icon_user_cart_full { background-position: 0 -119px; width: 21px; height: 20px; } 
+.sprite.marker { background-position: 0 -149px; width: 218px; height: 142px; } 
+.sprite.select_marker { background-position: 0 -301px; } 
+.sprite.select_marker_hvr { background-position: 0 -316px; } 
+
 .column-left {
     float: left;
 }
@@ -179,7 +189,7 @@ textarea:focus + label {
     z-index: 2;
 }
         .main-header .logo {
-            margin-right: 15px;
+            margin-right: 10px;
             width: 154px;
             height: 70px;
             position: relative;
@@ -190,6 +200,7 @@ textarea:focus + label {
                 height: 64px;
                 position: absolute;
                 top: 10px;
+                left: -6px;
             }
 
             .main-menu {
@@ -202,10 +213,10 @@ textarea:focus + label {
                 .main-menu-item {
                     display: inline-block;
                     vertical-align: top;
-                    padding: 19px 0;
+                    padding: 22px 0 19px 0;
                     line-height: 0;
                     position: relative;
-                    margin-right: 5px;
+                    margin-right: 0px;
                 }
 
                 .main-menu-item>a:after {
@@ -240,7 +251,7 @@ textarea:focus + label {
                     font-weight: bold;
                     color: #fff;
                     text-decoration: none;
-                    padding: 3px 15px;
+                    padding: 3px 14px;
                 }
 
                 .main-menu .main-menu-item.active {
@@ -383,7 +394,7 @@ textarea:focus + label {
                 
                 height: 32px;
                 width: 32px;
-                margin-right: 10px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
 
@@ -438,13 +449,13 @@ textarea:focus + label {
                 font-weight: 500;
                 padding-top: 4px;
                 padding-bottom: 4px;
-                padding-right: 17px;
-                padding-left: 44px;
+                padding-right: 16px;
+                padding-left: 45px;
                 color: #fff;
                 background-image: url("../img/icon_login.svg");
                 background-repeat: no-repeat;
                 background-position: 16px center;
-                margin-right: 10px;
+                margin-right: 6px;
             }
 
             .user-account-container:hover .user-account {
@@ -511,7 +522,7 @@ textarea:focus + label {
                 padding-top: 4px;
                 padding-bottom: 4px;
                 padding-right: 34px;
-                padding-left: 45px;
+                padding-left: 44px;
                 border-radius: 16px;
                 color: #fff;
                 background-repeat: no-repeat;
@@ -528,7 +539,8 @@ textarea:focus + label {
             }
 
             .user-cart-full {
-                background-image: url("../img/icon_user_cart_full.png");
+                background-image: url("../img/sprite.png");
+                background-position: 0 -119px;
             }
 
             .user-cart-container:hover .user-cart-empty {
@@ -656,7 +668,7 @@ textarea:focus + label {
                 font-weight: 700;
                 position: absolute;
                 right: 0;
-                top: 75px;
+                top: 69px;
                 text-align: right;
                 width: 200px;
                 color: #fff;
@@ -664,12 +676,12 @@ textarea:focus + label {
 
                 .header-contacts .date-range {
                     font-size: 14px;
-                    line-height: 24px;
+                    line-height: 20px;
                 }
 
                 .header-contacts .phone {
                     font-size: 22px;
-                    line-height: 32px;
+                    line-height: 30px;
                 }
 
 .main-content {
@@ -679,7 +691,7 @@ textarea:focus + label {
     .main-content .slider {
         position: relative;
         margin-top: 320px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
         .slider-1,
@@ -716,7 +728,7 @@ textarea:focus + label {
             font-size: 32px;
             line-height: 42px;
             text-decoration: none;
-            padding: 11px 43px;
+            padding: 7px 37px 14px 36px;
             border-radius: 32px;
             text-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
         }
@@ -734,7 +746,7 @@ textarea:focus + label {
                 height: 18px;
                 border: 2px solid #fff;
                 border-radius: 50%;
-                margin-right: 8px;
+                margin-right: 7px;
                 cursor: pointer;
             }
 
@@ -758,6 +770,7 @@ textarea:focus + label {
 
             .slider .slider-item {
                 display: none;
+                font-size: 0;
             }
 
             #btn-1:checked ~ .site-wrapper .slider-1,
@@ -792,7 +805,7 @@ textarea:focus + label {
             width: 520px;
             height: 190px;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         .promo-row .promo-1 {
@@ -807,10 +820,10 @@ textarea:focus + label {
 
             .promo-item .promo-title {
                 font-size: 35px;
-                line-height: 45px;
+                line-height: 33px;
                 color: #fff;
                 margin: 0;
-                margin-bottom: 15px;
+                margin-bottom: 17px;
             }
 
             .promo-item .promo-description {
@@ -821,13 +834,14 @@ textarea:focus + label {
 
             .promo-item .promo-button {
                 position: absolute;
-                bottom: 20px;
+                bottom: 30px;
                 right: 20px;
                 text-decoration: none;
                 font-size: 18px;
                 line-height: 28px;
-                padding: 9px 22px;
+                padding: 10px 28px 10px 25px;
                 border-radius: 23px;
+                letter-spacing: -0.03em;
             }
 
     .catalog-content .goods-row:last-child {
@@ -898,9 +912,9 @@ textarea:focus + label {
                 content: "";
                 width: 61px;
                 height: 61px;
-                background-image: url("../img/hit.png");
+                background-image: url("../img/sprite.png");
                 background-repeat: no-repeat;
-                background-position: 0 0;
+                background-position: 0 -48px;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -908,7 +922,7 @@ textarea:focus + label {
             }
 
             .goods-item img {
-                margin-bottom: 15px;
+                margin-bottom: 6px;
             }
 
             .goods-item .goods-item-price {
@@ -919,15 +933,24 @@ textarea:focus + label {
                 color: #fff;
             }
 
-                .goods-item-price .goods-item-price-value,
-                .goods-item-price .goods-item-unity {
+                .goods-item-price-value,
+                .goods-item-unity {
                     display: inline-block;
-                    vertical-align: top;
+                    vertical-align: baseline;
                     line-height: 55px;
                     font-size: 45px;
                     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+                    line-height: 54px;
                 }
 
+                .goods-item-price-value {
+                    
+                }
+
+                .goods-item-unity {
+                    font-size: 30px;
+                    line-height : 42px;
+                }
 
                 .goods-item-price .goods-item-price-valute {
                     display: inline-block;
@@ -938,7 +961,6 @@ textarea:focus + label {
                     background-repeat: no-repeat;
                     background-position: center;
                 }
-
 
             .goods-item .goods-item-title {
                 display: block;
@@ -957,11 +979,11 @@ textarea:focus + label {
             }
 
     .shop-advantage {
-        padding: 30px 20px 25px 20px;
+        padding: 22px 20px 26px 20px;
         margin-bottom: 40px;
         background-color: #e6d8bc;
         background-image: url("../img/bg_advantage.jpg");
-        border-radius: 10px;
+        border-radius: 13px;
     }
 
         .shop-advantage .shop-advantage-main {
@@ -969,7 +991,6 @@ textarea:focus + label {
             line-height: 30px;
             font-weight: 500;
             margin: 0;
-            margin-bottom: 25px;
         }
 
         .shop-advantage ul {
@@ -989,10 +1010,7 @@ textarea:focus + label {
                     font-size: 16px;
                     line-height: 22px;
                     padding-left: 55px;
-                }
-
-                .shop-advantage p:first-child {
-                    margin-bottom: 20px;
+                    padding-top: 21px;
                 }
 
                 .shop-advantage .icecream {
@@ -1016,7 +1034,7 @@ textarea:focus + label {
                 .shop-advantage .cow,
                 .shop-advantage .thermometer {
                     background-repeat: no-repeat;
-                    background-position: 0 0;
+                    background-position: 0 10px;
                 }
 
     .main-content .promo-row {
@@ -1038,7 +1056,7 @@ textarea:focus + label {
 
             .promo-item-news div {
                 font-size: 16px;
-                line-height: 22px;
+                line-height: 28px;
                 font-weight: 500;
                 color: #5a5a5a;
             }
@@ -1048,6 +1066,8 @@ textarea:focus + label {
                 line-height: 30px;
                 font-weight: bold;
                 color: #353535;
+                display: block;
+                width: 285px;
             }
 
             .promo-item-news a:hover {
@@ -1062,13 +1082,14 @@ textarea:focus + label {
             font-size: 16px;
             line-height: 22px;
             color: #5a5a5a;
+            padding: 33px 14px 8px 26px;
         }
 
             .promo-item-delivery p {
                 font-size: 16px;
                 line-height: 22px;
                 margin: 0;
-                margin-bottom: 35px;
+                margin-bottom: 337px;
             }
 
             .promo-item-delivery input {
@@ -1100,14 +1121,14 @@ textarea:focus + label {
         outline: 2px solid red;
         bottom: -468px;
         amargin-left: -200px;
-        margin-right: -400px;
+        amargin-right: -400px;
         height: 430px;
         width: 1200px;
-        background-image: url("../img/marker.png"),
+        background-image: url("../img/sprite.png"),
                           url("../img/map.jpg");
         background-repeat: no-repeat,
                            no-repeat;
-        background-position: 265px center,
+        background-position: 0 -149px,
                              center;
     }
 
@@ -1122,6 +1143,10 @@ textarea:focus + label {
             padding: 30px 28px;
             background-color: #fff;
             border-radius: 13px;
+            width: 300px;
+            position: absolute;
+            right: 0;
+            top: 50px;
         }
 
             .map-contacts p {
@@ -1468,17 +1493,8 @@ textarea:focus + label {
             color: #ffbc9e;
         }
 
-
-.catalog {
-
-}
-
     .catalog .main-header {
         margin-bottom: 25px;
-    }
-
-    .catalog .catalog-content {
-
     }
 
         .catalog-content .breadcrumbs {
@@ -1583,9 +1599,9 @@ textarea:focus + label {
                     }
 
                     .catalog-filter-item .styled-select {
-                        background-image: url("../img/select_marker.png");
+                        background-image: url("../img/sprite.png");
                         background-repeat: no-repeat;
-                        background-position: 186px center;
+                        background-position: 186px -301px;
                         background-color: #9DB1A6;
                         border-radius: 18px;
                     }
@@ -1614,14 +1630,10 @@ textarea:focus + label {
                             font-weight: 400;
                         }
 
-                        .catalog-filter-item .styled-select:hover {
-                            
-                        }
-
                         .catalog-filter-item .styled-select:hover select {
-                            background-image: url("../img/select_marker_hvr.png");
+                            background-image: url("../img/sprite.png");
                             background-repeat: no-repeat;
-                            background-position: 186px center;
+                            background-position: 186px -316px;
                             color: #343434;
                             background-color: #fff;
                             border-radius: 18px;
@@ -1936,15 +1948,15 @@ textarea:focus + label {
             .pagination-item.next:hover a,
             .pagination-item.next:active a {
                 background-color: transparent;
-                background-image: url("../img/arrow_right.png");
+                background-image: url("../img/sprite.png");
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: 0 -24px;
             }
 
             .prev.disabled {
-                background-image: url("../img/arrow_left.png");
+                background-image: url("../img/sprite.png");
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: 0 0;
             }
 
 
