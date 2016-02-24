@@ -1,12 +1,12 @@
-.sprite { background: url('sprite.png') no-repeat top left; width: 9px; height: 5px;  } 
+.sprite { background: url('sprite.png') no-repeat top left; width: 9px; height: 5px;  }
 
-.sprite.arrow_left { background-position: 0 0; height: 14px; } 
-.sprite.arrow_right { background-position: 0 -24px; height: 14px; } 
-.sprite.hit { background-position: 0 -48px; width: 61px; height: 61px; } 
-.sprite.icon_user_cart_full { background-position: 0 -119px; width: 21px; height: 20px; } 
-.sprite.marker { background-position: 0 -149px; width: 218px; height: 142px; } 
-.sprite.select_marker { background-position: 0 -301px; } 
-.sprite.select_marker_hvr { background-position: 0 -316px; } 
+.sprite.arrow_left { background-position: 0 0; height: 14px; }
+.sprite.arrow_right { background-position: 0 -24px; height: 14px; }
+.sprite.hit { background-position: 0 -48px; width: 61px; height: 61px; }
+.sprite.icon_user_cart_full { background-position: 0 -119px; width: 21px; height: 20px; }
+.sprite.marker { background-position: 0 -149px; width: 218px; height: 142px; }
+.sprite.select_marker { background-position: 0 -301px; }
+.sprite.select_marker_hvr { background-position: 0 -316px; }
 
 .column-left {
     float: left;
@@ -43,7 +43,7 @@ body {
 
     font-weight: bold;
     color: #fff;
-    
+
     border: none;
     outline: none;
 }
@@ -264,7 +264,7 @@ textarea:focus + label {
                     border-radius: 16px;
                     border-bottom: none;
                     color: #000;
-                    
+
                     font-size: 16px;
                     line-height: 26px;
                     font-weight: bold;
@@ -341,7 +341,7 @@ textarea:focus + label {
                             .sub-menu li a{
                                 color: #000;
                                 text-decoration: none;
-                                
+
                             }
 
                             .sub-menu li:hover {
@@ -391,7 +391,7 @@ textarea:focus + label {
                 background-image: url("../img/icon_search.svg");
                 background-repeat: no-repeat;
                 background-position: center;
-                
+
                 height: 32px;
                 width: 32px;
                 margin-right: 6px;
@@ -411,7 +411,7 @@ textarea:focus + label {
 
                     display: none;
                     padding: 17px 15px;
-                    
+
                     border-radius: 5px;
                     background-color: #f8f7f4;
 
@@ -944,7 +944,7 @@ textarea:focus + label {
                 }
 
                 .goods-item-price-value {
-                    
+
                 }
 
                 .goods-item-unity {
@@ -1038,7 +1038,7 @@ textarea:focus + label {
                 }
 
     .main-content .promo-row {
-        
+
     }
 
         .promo-row .promo-item-news,
@@ -1073,7 +1073,7 @@ textarea:focus + label {
             .promo-item-news a:hover {
                 color: #ec593c;
             }
-        
+
         .promo-row .promo-item-delivery {
             background-color: #f8f7f4;
             background-image: url("../img/bg_promo_4.png");
@@ -1089,7 +1089,7 @@ textarea:focus + label {
                 font-size: 16px;
                 line-height: 22px;
                 margin: 0;
-                margin-bottom: 337px;
+                margin-bottom: 37px;
             }
 
             .promo-item-delivery input {
@@ -1116,37 +1116,27 @@ textarea:focus + label {
                 border-radius: 22px;
             }
 
-    .main-content .map {
-        position: absolute;
-        outline: 2px solid red;
-        bottom: -468px;
-        amargin-left: -200px;
-        amargin-right: -400px;
+    .map {
+        min-width: 1200px;
+        position: relative;
         height: 430px;
-        width: 1200px;
-        background-image: url("../img/sprite.png"),
-                          url("../img/map.jpg");
-        background-repeat: no-repeat,
-                           no-repeat;
-        background-position: 0 -149px,
-                             center;
     }
 
-        .map .map-container {
+        .map-container {
+            background: url("../img/map.jpg") no-repeat 50% 50%;
             height: 430px;
-            position: absolute;
-            top: 0;
-            left: 0;
+            width: 100%;
         }
 
-        .map .map-contacts {
+        .map-contacts {
             padding: 30px 28px;
             background-color: #fff;
             border-radius: 13px;
             width: 300px;
             position: absolute;
-            right: 0;
+            right: 50%;
             top: 50px;
+            margin-right: -573px;
         }
 
             .map-contacts p {
@@ -1321,7 +1311,6 @@ textarea:focus + label {
 
 .main-footer {
     width: 100%;
-    margin-top: 468px;
     text-align: center;
     padding-bottom: 25px;
 }
@@ -1384,7 +1373,7 @@ textarea:focus + label {
             .social-btn-vk a {
                 background-image: url("../img/icon_vk.svg");
             }
-            
+
 
             .social-btn:hover a {
                 border-color: #dbe3de;
@@ -1430,7 +1419,7 @@ textarea:focus + label {
 
 
 
-            
+
 
     .main-footer .footer-info {
         display: inline-block;
@@ -1612,12 +1601,12 @@ textarea:focus + label {
                             font-weight: 500;
 
                             padding: 6.5px 50px 6.5px 15px;
-                            
+
                             color: #fff;
 
                             outline: none;
                             border: none;
-                            
+
                             background: transparent;
 
                             -webkit-appearance: none;
