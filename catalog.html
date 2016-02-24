@@ -5,14 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Глейси - Каталог</title>
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="catalog">
         <div class="site-wrapper">
             <div class="site-container">
-                <header class="main-header clear-fix">
-                    <div class="column-left clear-fix">
+                <header class="main-header clearfix">
+                    <div class="column-left clearfix">
                         <div class="logo column-left">
                             <a href="index.html"><img src="img/logo_gllacy.svg" width="154" height="64" alt="Глейси"></a>
                         </div> 
@@ -38,8 +38,8 @@
                         <div class="search-form-container">
                             <div class="search-form">
                                 <form action="https://echo.htmlacademy.ru" method="post">
-                                    <input type="search" name="search-item" placeholder="Что ищем?">
-                                    <div class="dictation">Что ищем?</div>
+                                    <input type="search" name="search-item" id="search-item" placeholder="Что ищем?">
+                                    <label for="search-item">Что ищем?</label>
                                 </form>
                             </div>
                         </div>
@@ -47,10 +47,10 @@
                         <div class="user-account-container">
                             <div class="user-account">Вход
                                 <form action="https://echo.htmlacademy.ru" method="post">
-                                    <input type="text" name="user-mail" placeholder="Электронная почта">
-                                    <div class="dictation mail">Электронная почта</div>
-                                    <input type="password" name="user-password" placeholder="Пароль">
-                                    <div class="dictation password">Пароль</div>
+                                    <input type="text" name="user-mail" id="user-mail" placeholder="Электронная почта">
+                                    <label for="user-mail">Электронная почта</label>
+                                    <input type="password" name="user-password" id="password" placeholder="Пароль">
+                                    <label for="password">Пароль</label>
                                     <input class="btn" type="submit" value="Войти">
                                     <a href="#">Забыли пароль?</a>
                                     <a href="#">Новая регистрация</a>
@@ -59,8 +59,8 @@
                         </div>
 
                         <div class="user-cart-container">
-                            <div class="user-cart">2 товара
-                                <div class="user-cart-items clear-fix">
+                            <div class="user-cart user-cart-full">2 товара
+                                <div class="user-cart-items clearfix">
                                     <table>
                                         <tr class="user-cart-item">
                                             <td class="user-cart-item-remouve"></td>
@@ -96,7 +96,7 @@
                     </div>
                 </header>
 
-                <main class="catalog-content clear-fix">
+                <main class="catalog-content clearfix">
 
                     <ul class="breadcrumbs">
                         <li class="breadcrumbs-item"><a href="#">Главная</a></li>
@@ -204,14 +204,14 @@
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <button class="btn" type="submit">Применить</button>
+                                    <button type="submit">Применить</button>
                                 </div>
                             </div>
                         </form>
                     </section>
 
                     <section class="goods">
-                        <div class="goods-row clear-fix">
+                        <div class="goods-row clearfix">
                             <article class="goods-item">
                                 <img src="img/goods_item_1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                                 <div class="goods-item-price">
@@ -221,7 +221,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                             <article class="goods-item">
@@ -233,7 +233,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                             <article class="goods-item">
@@ -245,7 +245,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                             <article class="goods-item">
@@ -257,11 +257,11 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                         </div>
-                        <div class="goods-row clear-fix">
+                        <div class="goods-row clearfix">
                             <article class="goods-item">
                                 <img src="img/goods_item_5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
                                 <div class="goods-item-price">
@@ -271,7 +271,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочное с брусничным джемом</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                             <article class="goods-item">
@@ -283,7 +283,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочно-черничное с цельными ягодами черники</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                             <article class="goods-item">
@@ -295,7 +295,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                             <article class="goods-item">
@@ -307,11 +307,11 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочное с шоколадной стружкой</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                         </div>
-                        <div class="goods-row clear-fix">
+                        <div class="goods-row clearfix">
                             <article class="goods-item">
                                 <img src="img/goods_item_9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                                 <div class="goods-item-price">
@@ -321,7 +321,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочно-ванильное с кусочками шоколада</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                             <article class="goods-item">
@@ -333,7 +333,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочноe с ментоловым сиропом</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>                    
                             <article class="goods-item">
@@ -345,7 +345,7 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочное с кусочками черного шоколада</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                             <article class="goods-item">
@@ -357,25 +357,25 @@
                                 </div>
                                 <a class="goods-item-title" href="#">Сливочное с мятным сиропом</a>
                                 <div class="quick-button">
-                                    <a class="quick-view" href="#quick_view">Быстрый просмотр</a>
+                                    <a class="btn quick-view" href="#quick_view">Быстрый просмотр</a>
                                 </div>
                             </article>
                         </div>
                     </section>
                         
                     <ul class="pagination">
-                        <li class="prev disabled">&lt;</li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li class="next"><a href="#">&gt;</a></li>
+                        <li class="pagination-item prev disabled"></li>
+                        <li class="pagination-item active"><a href="#">1</a></li>
+                        <li class="pagination-item"><a href="#">2</a></li>
+                        <li class="pagination-item"><a href="#">3</a></li>
+                        <li class="pagination-item"><a href="#">4</a></li>
+                        <li class="pagination-item"><a href="#">5</a></li>
+                        <li class="pagination-item next"><a href="#"></a></li>
                     </ul>
 
                 </main>
 
-                <footer class="main-footer clear-fix">
+                <footer class="main-footer clearfix">
 
                     <ul class="footer-social column-left">
                         <li class="social-btn social-btn-twit"><a href="#">Твиттер</a></li>

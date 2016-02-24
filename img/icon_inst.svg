@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="31.376" height="31.41" viewBox="0 0 31.376 31.41">
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: #e6ebe9;
         fill-rule: evenodd;
-        opacity: 0.8;
       }
     </style>
   </defs>
