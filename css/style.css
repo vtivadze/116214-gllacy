@@ -522,6 +522,11 @@ input[name="slider"] {
                 background-position: 16px center;
             }
 
+            .catalog .user-cart {
+                padding-left: 42px;
+                padding-right: 19px;
+            }
+
             .user-cart-container:hover .user-cart {
                 color: #000;
                 background-color: #fff;
@@ -533,7 +538,7 @@ input[name="slider"] {
 
             .user-cart-full {
                 background-image: url("../img/sprite.png");
-                background-position: 0 -119px;
+                background-position: 18px -113px;
             }
 
             .user-cart-container:hover .user-cart-empty {
@@ -860,7 +865,7 @@ input[name="slider"] {
             left: -5px;
             width: 277px;
             height: 403px;
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(248, 247, 244, 0.3);
             border-radius: 5px;
         }
 
