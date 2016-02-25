@@ -1,0 +1,1 @@
+!function(){var e=document.querySelector(".map button");e&&(e.onclick=function(){document.querySelector(".index .modal-window").style.display="block"});var o=document.querySelector(".index .modal-window .close");o&&(o.onclick=function(){document.querySelector(".index .modal-window").style.display="none"})}();
